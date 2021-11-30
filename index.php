@@ -12,7 +12,7 @@
     <h3 class="txt-cinzaescuro">Mas vamos ver outras como: Sha256, Sha512, base64 e password_hash</h3>
     <br>
     <br>
-    <h4 class="txt-cinzaescuro">Cadastro de Usuário</h4>
+    <h4 class="txt-cinzaescuro">Cadastro de Novo Usuário</h4>
     <br>
     <form method="post">
         <input type="text" name="nome" placeholder="Nome aqui..."/>
