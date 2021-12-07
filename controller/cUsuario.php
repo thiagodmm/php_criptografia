@@ -41,11 +41,11 @@ class cUsuario {
 
     /*
         - - Revisar este método - Não está deletando - -
+        - - Feito em arquivo separado, está OK agora - -
     */
     public function deletar() {
         if(isset($_POST['deletar'])){
-            $id = $_POST['idUser'];
-
+            $id = (int)$_POST['idUser'];
             $pdo = require_once'../pdo/connection.php';
             $sql = "delete from usuario where idUser = ?";
             $sth = $pdo->prepare($sql);

@@ -48,9 +48,9 @@ $listaUser = $cadUser->getUsuarios();
                     <td style="padding: 10px;">
                         <?php 
                         if($_SESSION['emailN'] != $user['email']){?>
-                        <form action="<?php $cadUser->deletar(); ?>" method="post">
+                        <form action="../controller/deletarUser.php" method="post">
                             <input type="hidden" value="<?php echo $user['idUser']; ?>" name="idUser">
-                            <input type="submit" value="deletar" name="deletar" style="background-color: orange; color: white;">
+                            <input type="submit" value="deletar" name="deletar" style="background-color: orange; border-color: red; color: white; cursor: pointer;">
 
                         </form>
                     <?php }
@@ -62,6 +62,6 @@ $listaUser = $cadUser->getUsuarios();
     </table>
     <br>
     <br>
-    <button onclick="location.href='cadUsuario.php'" style="padding:10px; border-radius:5px; border: 1px solid; background-color: brown; color: white;">Voltar</button>
+    <button onclick="location.href='cadUsuario.php'" style="padding:10px; border-radius:5px; border: 1px solid; background-color: darkslateblue; color: white; cursor: pointer;">Voltar</button>
 </body>
 </html>
