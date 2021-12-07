@@ -41,16 +41,16 @@ if (isset($_SESSION['logadoN']) && $_SESSION['logadoN'] == true) {
         <input type="password" name="pas" placeholder="Senha aqui..." required /></label>
         <br>
         <br>
-        <input type="submit" name="salvar" value="Salvar" style="background-color: darkslateblue; color: white; cursor: pointer;"/>
+        <input type="submit" name="salvar" value="Salvar" style="background-color: darkslateblue; color: white; cursor: pointer; width:140px;"/>
         <br>
         <br>
-        <input type="reset" name="limpar" value="Limpar" style="background-color: darkslateblue; color: white; cursor: pointer;"/>
+        <input type="reset" name="limpar" value="Limpar" style="background-color: darkslateblue; color: white; cursor: pointer; width:140px;"/>
         <br>
         <br>
-        <input type="button" value="Voltar" onclick="location.href='../index.php'" style="background-color: darkslateblue; color: white; cursor: pointer;"/>
+        <input type="button" value="Voltar" onclick="location.href='../index.php'" style="background-color: darkslateblue; color: white; cursor: pointer; width:140px;"/>
         <br>
         <br>
-        <input type="button" value="Lista de Usuários" onclick="location.href='listaUsuarios.php'" style="background-color: darkslateblue; color: white; cursor: pointer;"/>
+        <input type="button" value="Lista de Usuários" onclick="location.href='listaUsuarios.php'" style="background-color: darkslateblue; color: white; cursor: pointer; width:140px;"/>
     </form>
 
 </body>

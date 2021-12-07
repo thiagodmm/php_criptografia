@@ -46,11 +46,17 @@ $listaUser = $cadUser->getUsuarios();
                         <?php echo $user['email']; ?>
                     </td>
                     <td style="padding: 10px;">
+
+                    <form action="editarUser.php" method="POST">
+                        <input type="hidden" value="<?php echo $user['isUser']; ?>" name="idUser"/>
+                        <input type="submit" value="Editar" name="editar" style="background-color: orange; border-color: red; color: white; cursor: pointer; width:100px;">
+                    </form>
+
                         <?php 
                         if($_SESSION['emailN'] != $user['email']){?>
                         <form action="../controller/deletarUser.php" method="post">
                             <input type="hidden" value="<?php echo $user['idUser']; ?>" name="idUser">
-                            <input type="submit" value="deletar" name="deletar" style="background-color: orange; border-color: red; color: white; cursor: pointer;">
+                            <input type="submit" value="Deletar" name="deletar" style="background-color: orange; border-color: red; color: white; cursor: pointer; width:100px;">
 
                         </form>
                     <?php }
@@ -62,6 +68,6 @@ $listaUser = $cadUser->getUsuarios();
     </table>
     <br>
     <br>
-    <button onclick="location.href='cadUsuario.php'" style="padding:10px; border-radius:5px; border: 1px solid; background-color: darkslateblue; color: white; cursor: pointer;">Voltar</button>
+    <button onclick="location.href='cadUsuario.php'" style="padding:10px; border-radius:5px; border: 1px solid; background-color: darkslateblue; color: white; cursor: pointer; width:140px;">Voltar</button>
 </body>
 </html>

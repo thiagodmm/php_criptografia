@@ -27,10 +27,10 @@ $login = new cLogin();
         <input type="password" name="pas" placeholder="Senha aqui..." required /></label>
         <br>
         <br>
-        <input type="submit" name="logar" value="Logar" style="background-color: darkslateblue; color: white; cursor: pointer;"/>
+        <input type="submit" name="logar" value="Logar" style="background-color: darkslateblue; color: white; cursor: pointer; width: 140px;"/>
         <br>
         <br>
-        <input type="reset" name="limpar" value="Limpar" style="background-color: darkslateblue; color: white; cursor: pointer;"/>
+        <input type="reset" name="limpar" value="Limpar" style="background-color: darkslateblue; color: white; cursor: pointer; width: 140px;"/>
     </form>
 </body>
 </html>

@@ -25,10 +25,10 @@ if (isset($_SESSION['logadoN']) && $_SESSION['logadoN'] == true) {
     <br>
     <br>
     <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Utilize o botão abaixo para se cadastrar.</p>
-    <button onclick="location.href='view/cadUsuario.php'" style="padding:10px; border-radius:5px; border: 1px solid; background-color: darkslateblue; color: white; cursor: pointer;">Cadastro de Usuário</button>
+    <button onclick="location.href='view/cadUsuario.php'" style="padding:10px; border-radius:5px; border: 1px solid; background-color: darkslateblue; color: white; cursor: pointer; width: 200px;">Cadastro de Usuário</button>
     <br>
     <br>
-    <input type="button" value="Lista de Usuários" onclick="location.href='view/listaUsuarios.php'" style="background-color: darkslateblue; color: white; cursor: pointer;"/>
+    <input type="button" value="Lista de Usuários" onclick="location.href='view/listaUsuarios.php'" style="background-color: darkslateblue; color: white; cursor: pointer; width: 200px;"/>
 
 </body>
 </html>
