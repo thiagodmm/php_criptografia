@@ -4,11 +4,15 @@ Autor: Thiago de Moura Machado
 
 body {
     text-align:center;
-    background-color: lightblue;
+    background-color: burlywood;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+td {
+    padding: 10px;
 }
 
 .txt-cinzaescuro {
@@ -20,3 +24,4 @@ input {
     border-radius: 5px;
     border: 1px solid;
 }
+

@@ -27,4 +27,34 @@ class cUsuario {
             unset($sth);
         }
     }
+
+    public function getUsuarios() {
+        $pdo = require_once '../pdo/connection.php';
+        $sql = "select idUser, nomeUser, email from usuario";
+        $sth = $pdo->prepare($sql);
+        $sth->execute();
+        $result = $sth->fetchAll();
+        unset($sth);
+        unset($pdo);
+        return $result;
+    }
+
+    /*
+        - - Revisar este método - Não está deletando - -
+    */
+    public function deletar() {
+        if(isset($_POST['deletar'])){
+            $id = $_POST['idUser'];
+
+            $pdo = require_once'../pdo/connection.php';
+            $sql = "delete from usuario where idUser = ?";
+            $sth = $pdo->prepare($sql);
+            $sth->bindParam(1, $id, PDO::PARAM_INT);
+            $sth->execute();
+            unset($sth);
+            unset($pdo);
+            header("Refresh: 0");
+        }
+    }
+
 }

@@ -26,7 +26,7 @@ class cLogin {
                     $_SESSION['usuarioN'] = $result['nomeUser'];
                     $_SESSION['emailN'] = $result['email'];
                     $_SESSION['logadoN'] = true;
-                    header("Location: cadUsuario.php");
+                    header("Location: ../index.php");
                 }
             }else {
                 header("Location: login.php");

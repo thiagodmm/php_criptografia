@@ -1,5 +1,11 @@
 <!-- Autor: Thiago de Moura Machado -->
 <?php
+
+session_start();
+if (isset($_SESSION['logadoN']) && $_SESSION['logadoN'] == true) {
+    header("Location: ../index.php");
+}
+
 require_once '../controller/cLogin.php';
 $login = new cLogin();
 ?>
@@ -8,7 +14,7 @@ $login = new cLogin();
 <head>
 <meta charset="UTF-8">
 <title>Login - Trabalhando com BD e PDO</title>
-<link rel="stylesheet" type="text/css" href="estilos.css">
+<link rel="stylesheet" type="text/css" href="../estilos.css">
 </head>
 <body>
     <h1>Login</h1>
@@ -21,10 +27,10 @@ $login = new cLogin();
         <input type="password" name="pas" placeholder="Senha aqui..." required /></label>
         <br>
         <br>
-        <input type="submit" name="logar" value="Logar"/>
+        <input type="submit" name="logar" value="Logar" style="background-color: brown; color: white;"/>
         <br>
         <br>
-        <input type="reset" name="limpar" value="Limpar"/>
+        <input type="reset" name="limpar" value="Limpar" style="background-color: brown; color: white;"/>
     </form>
 </body>
 </html>
