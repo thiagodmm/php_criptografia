@@ -21,7 +21,7 @@ if (isset($_SESSION['logadoN']) && $_SESSION['logadoN'] == true) {
 </head>
 <body>
     <h1>Página Inicial</h1>
-    <h2>index.php</h2>
+    <img src="img/home.jpg">
     <br>
     <br>
     <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Utilize o botão abaixo para se cadastrar.</p>

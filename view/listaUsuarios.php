@@ -48,15 +48,15 @@ $listaUser = $cadUser->getUsuarios();
                     <td style="padding: 10px;">
 
                     <form action="editarUser.php" method="POST">
-                        <input type="hidden" value="<?php echo $user['isUser']; ?>" name="idUser"/>
-                        <input type="submit" value="Editar" name="editar" style="background-color: orange; border-color: red; color: white; cursor: pointer; width:100px;">
+                        <input type="hidden" value="<?php echo $user['idUser']; ?>" name="idUser"/>
+                        <input type="submit" value="Editar" name="editar" style="background-color: orange; border-color: red; color: white; cursor: pointer; width:100px; padding: 5px; margin: 5px;">
                     </form>
 
                         <?php 
                         if($_SESSION['emailN'] != $user['email']){?>
                         <form action="../controller/deletarUser.php" method="post">
                             <input type="hidden" value="<?php echo $user['idUser']; ?>" name="idUser">
-                            <input type="submit" value="Deletar" name="deletar" style="background-color: orange; border-color: red; color: white; cursor: pointer; width:100px;">
+                            <input type="submit" value="Deletar" name="deletar" style="background-color: orange; border-color: red; color: white; cursor: pointer; width:100px; padding: 5px; margin: 5px;">
 
                         </form>
                     <?php }

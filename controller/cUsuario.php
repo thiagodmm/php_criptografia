@@ -60,10 +60,11 @@ class cUsuario {
 
     // Método quase igual ao getUsuarios() acima, a diferença é que recebe um ID como parâmetro
     public function getUsuarioById($id){
+        
         $pdo = require_once '../pdo/connection.php';
         $sql = "select idUser, nomeUser, email from usuario where idUser = ?";
         $sth = $pdo->prepare($sql);
-        $sth->execute($id);
+        $sth->execute([$id]);
         $result = $sth->fetchAll();  // Atribui todas as informações ao result
         unset($sth);
         unset($pdo);
